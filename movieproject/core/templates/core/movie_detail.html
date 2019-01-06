@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+{{object.title}} - {{block.super}}
+{% endblock %}
+
+{% block main %}
+<div class="jumbotron">
+      <div class="container">
+        <h1>the rating</h1>
+        <span>{{ object.get_rating_display}}
+        </span>
+      </div>
+ </div>
+{% endblock %}
